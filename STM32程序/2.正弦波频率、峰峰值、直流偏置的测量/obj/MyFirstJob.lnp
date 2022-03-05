@@ -1,0 +1,18 @@
+--cpu Cortex-M3
+".\obj\cortexm3_macro.o"
+".\obj\stm32f10x_vector.o"
+".\obj\stm32f10x_rcc.o"
+".\obj\stm32f10x_flash.o"
+".\obj\stm32f10x_gpio.o"
+".\obj\stm32f10x_lib.o"
+".\obj\stm32f10x_usart.o"
+".\obj\stm32f10x_adc.o"
+".\obj\stm32f10x_systick.o"
+".\obj\stm32f10x_it.o"
+".\obj\main.o"
+".\obj\init.o"
+".\obj\cr4_fft_1024_stm32.o"
+--library_type=microlib --strict --scatter ".\obj\MyFirstJob.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\MyFirstJob.map" -o .\obj\MyFirstJob.axf
